@@ -1,0 +1,182 @@
+.subheader
+    margin-top: 50px
+    min-height: 750px
+    &-wrapper
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        margin-top: 35px
+    &__tabs
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-top: 30px
+        margin-bottom: 0
+        padding-left: 0
+        list-style-type: none
+    &__tab
+        margin: 0 5px
+        width: 222px
+        height: 52px
+        border: 2px solid #6B6B6B
+        font-size: 18px
+        font-weight: 400
+        text-align: center
+        color: #D0D0D0
+        text-transform: uppercase
+        line-height: 48px
+        transform: skewX(-25deg)
+        cursor: pointer
+        transition: 0.5s all
+        &:hover
+            box-shadow: 3px 3px 20px #C70101
+    &__content
+        margin-top: 55px
+        display: none // поставить none (после настройки карточек)
+        justify-content: space-evenly
+        flex-wrap: wrap
+        &_active
+            display: flex
+    &-item
+        display: none
+        width: 841.12px
+        min-height: 400px
+        border: 1px solid #E8E8E8
+        background-color: rgba(0, 0, 0, .6)
+        padding: 20px 15px 25px 15px
+        overflow: hidden
+        &_block
+            display: block
+        &__wrapper
+            display: flex
+            width: calc(200% + 40px)
+        &__content
+            width: 50%
+            margin-right: 0
+            transform: translateX(-100%)
+            transition: 0.5s all
+            &_active
+                transform: translateX(0%)
+                margin-right: 20px
+        &_list
+            /* display: none */
+            position: relative
+            width: 50%
+            margin: 0 0 0 20px
+            padding: 0 20px 0 20px
+            margin-bottom: 0
+            transition: translateX(0%)
+            transition: 0.5s all
+            &_active
+                transform: translateX(-100%)
+                margin-left: 0
+        &__subwrapper
+            display: flex
+            justify-content: space-between
+            margin-top: 10px
+            margin-bottom: 25px
+        &__game
+            padding: 42px
+            border: 2px solid rgba(0, 0, 0, .7)
+            min-width: 235px
+            min-height: 145px
+            transition: 0.5s all
+            &:hover
+                border: 2px solid #6B6B6B
+                min-width: 280px
+                padding: 60px
+            &-hw
+                margin-left: 15px
+                background: url(../img/halo_wars-min.jpg) center (center / cover) no-repeat  // Halo: Wars
+                &:hover
+                    box-shadow: 7px 7px 30px #F00C0C
+                    border:2px solid #6B6B6B
+            &-hr
+                background: url(../img/reach-min.jpg) center (center / cover) no-repeat  // Halo Reach
+                &:hover
+                    box-shadow: 7px 7px 30px #F00C0C
+                    border:2px solid #6B6B6B
+            &-hce
+                margin-right: 15px
+                background: url(../img/combat_evolved-min.png) center (center / cover) no-repeat  // Halo: Combat Evolved
+                &:hover
+                    box-shadow: 7px 7px 30px #F00C0C
+                    border:2px solid #6B6B6B
+            &-hftr
+                margin-left: 15px
+                background: url(../img/firetaem-min.jpg) center (center / cover) no-repeat  // Halo: Fireteam Raven
+                &:hover
+                    box-shadow: 7px 7px 30px #F00C0C
+                    border:2px solid #6B6B6B
+            &-htwo
+                background: url(../img/halo_2-min.jpeg) center (center / cover) no-repeat  // Halo 2
+                &:hover
+                    box-shadow: 7px 7px 30px #F00C0C
+                    border:2px solid #6B6B6B
+            &-hodst
+                margin-right: 15px
+                background: url(../img/odst-min.jpg) center (center / cover) no-repeat  // Halo 3: ODST
+                &:hover
+                    box-shadow: 7px 7px 30px #F00C0C
+                    border:2px solid #6B6B6B
+            &-three
+                background: url(../img/halo_3-min.png) center (center / cover) no-repeat // Halo 3
+                &:hover
+                    box-shadow: 7px 7px 30px #F00C0C
+                    border:2px solid #6B6B6B
+            &-hsa
+                background: url(../img/assault-min.jpg) center (center / cover) no-repeat  // Halo: Spartan Assault
+                margin-left: 15px
+                &:hover
+                    box-shadow: 7px 7px 30px #F00C0C
+                    border:2px solid #6B6B6B
+            &-hfour
+                background: url() center (center / cover) no-repeat  // Halo 4
+                &:hover
+                    box-shadow: 7px 7px 30px #F00C0C
+                    border:2px solid #6B6B6B
+            &-hss
+                background: url(../img/spartan_strike-min.jpg) center (center / cover) no-repeat  // Halo: Spartan Strike
+                &:hover
+                    box-shadow: 7px 7px 30px #F00C0C
+                    border:2px solid #6B6B6B
+            &-guardians
+                background: url(../img/halo_5-min.jpg) center (center / cover) no-repeat  // Halo 5: Guardians
+                &:hover
+                    box-shadow: 7px 7px 30px #F00C0C
+                    border:2px solid #6B6B6B
+            &-hwtwo
+                background: url(../img/wars_2-min.jpeg) center (center / cover) no-repeat  // Halo 5: Guardians
+                &:hover
+                    box-shadow: 7px 7px 30px #F00C0C
+                    border:2px solid #6B6B6B
+        &__border
+            padding: 25px
+            border: 2px solid #E8E8E8
+            width: 150px
+            height: 95px
+            background-color: rgba(0, 0, 0, .7)
+            &-wars
+                padding: 36px
+            &-reach
+                padding: 32px
+            &-combat
+                padding: 23px
+            &-odst
+                padding: 27px
+        &_link
+            display: block
+            margin: 0 auto
+            color: #E8E8E8
+            text-align: center
+            text-decoration: none
+        &_heading
+            font-size: 16px
+            font-weight: 400
+    &__link
+        display: block
+        font-size: 14px
+        font-weight: 300
+        text-align: center
+        text-decoration: none
+        color: #fff
