@@ -1,10 +1,13 @@
 .header
     min-height: 80px
     background: rgba(0, 0, 0, .6)
+    &:hover
+        a
+            color: #fff
     .header__wrapper > div
         width: 20%
         &:nth-last-child(2)
-            width: 60%         
+            width: 57%         
     &__wrapper
         display: flex
         justify-content: space-between
@@ -20,6 +23,7 @@
         justify-content: space-between
         list-style-type: none
     &__item
+        margin: 0 3px 0 3px
         padding: 5px 7px 2px 7px
     &__link
         font-size: 15px
@@ -27,5 +31,27 @@
         color: #A8A8A8
         text-align: center
         text-decoration: none
+        transition: 0.6s all
+        &-game
+            &:hover
+                font-size: 17px
+        &-book
+            &:hover
+                font-size: 17px
+        &-movie
+            &:hover
+                font-size: 17px
+        &-weapon
+            &:hover
+                font-size: 17px
+        &-race
+            &:hover
+                font-size: 17px
+        &-history
+            &:hover
+                font-size: 17px
+        &-faq
+            &:hover
+                font-size: 17px
 
     
