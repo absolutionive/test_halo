@@ -34,10 +34,12 @@
         div
             transform: skewX(25deg)
     &__content
+        position: relative
         margin-top: 55px
         display: none // поставить none (после настройки карточек)
         justify-content: space-evenly
         flex-wrap: wrap
+        width: 1140px
         &_active
             display: flex
     &-item
@@ -236,10 +238,33 @@
         text-decoration: none
         color: #fff
     &__closelink
+        /* position: absolute */
         display: block
+        /* top: 79px */
+        /* right: 137px */
         margin-top: 10px
         font-size: 14px
         font-weight: 300
         text-align: center
         text-decoration: none
         color: #fff
+        &_hidden
+            display: block
+        /* &::before
+            content: ''
+            position: absolute
+            display: block
+            border: 1px solid rgba(0, 0, 0, .7)
+            transform: translateY(3px) rotate(45deg)
+            width: 15px
+            height: 3px
+            background-color: rgba(255, 0, 0, .6) */
+        /* &::after
+            content: ''
+            position: absolute
+            display: block
+            border: 1px solid rgba(0, 0, 0, .7)
+            transform: translateY(3px) rotate(-45deg)
+            width: 15px
+            height: 3px
+            background-color: rgba(255, 0, 0, .6) */
