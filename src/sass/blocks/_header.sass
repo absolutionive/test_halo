@@ -1,24 +1,25 @@
 .header
-    min-height: 90px
+    min-height: 120px
     background: rgba(0, 0, 0, .6)
     &_icon
         width: 100%
     &__navbar
         display: grid
         grid-template-columns: 200px 1120px 150px
-        grid-template-rows: 110px   
+        grid-template-rows: 110px  
+        &-icon
+            height: 90px 
     &__list
         /* margin-top: 25px */
         list-style-type: none
         &-wrapper
             display: grid
             grid-template-columns: 130px 137px 180px 180px 180px 90px 75px
-            grid-template-rows: 50px
+            grid-template-rows: 110px
         &-wrapper > div
             display: flex
             justify-content: center
             align-items: center
-            height: 110px
             &:hover
                 background-color: rgba(166, 165, 168, .3)
         &_link
