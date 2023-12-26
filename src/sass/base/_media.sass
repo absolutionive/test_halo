@@ -1,0 +1,291 @@
+@media (max-width: 1200px)
+    .promo
+        min-height: 900px
+    .header
+        min-height: 105px
+        .container
+            width: 1140px
+        &__navbar
+            display: grid
+            grid-template-columns: 140px 780px
+            grid-template-rows: 105px
+        &_icon
+            width: 100%
+        &__list
+            &-wrapper
+                display: grid
+                grid-template-columns: 110px 117px 140px 140px 140px 60px 45px
+                grid-template-rows: 105px
+        .button
+            display: none
+            margin-top: 35px
+            width: 80px
+            height: 40px
+        &__list
+            &_link
+                font-size: 10px
+    .subheader
+        margin-top: 35px
+
+@media (max-width: 991px)
+    .promo
+        min-height: 900px
+        &__hr
+            width: 650px
+    .header
+        min-height: 105px
+        &_icon
+            width: 150%
+        .container
+            width: 768px
+        &__navbar
+            display: grid
+            grid-template-columns: 100px 622px
+            grid-template-rows: 100px
+        &__list
+            &-wrapper
+                display: grid
+                grid-template-columns: 75px 80px 120px 105px 107px 48px 45px
+                grid-template-rows: 105px
+            &-wrapper > div
+                display: flex
+                justify-content: center
+                align-items: center
+                &:hover
+                    background-color: rgba(0, 0, 0, 0.02)
+        .button
+            display: none
+            margin-top: 35px
+            margin-left: 45px
+            width: 80px
+            height: 40px
+        &_link
+            font-size: 12px
+            font-weight: 400px
+            text-align: center
+            text-decoration: none
+            text-transform: uppercase
+            color: #fff
+    .subheader
+        .container
+            width: 768px
+            margin: 0 auto
+        &__tabs
+            display: flex
+            justify-content: center
+            align-items: center
+            margin-top: 30px
+            margin-bottom: 0
+            padding-left: 0
+            list-style-type: none
+        &__tab
+            margin: 0 5px
+            width: 148px
+            height: 50px
+            border: 2px solid #6B6B6B
+            background-color: rgba(0, 0, 0, .6)
+            font-size: 12px
+            font-weight: 400
+            text-align: center
+            color: #E1DBDB
+            text-transform: uppercase
+            line-height: 48px
+            transform: skewX(-25deg)
+            cursor: pointer
+            transition: 0.5s all
+            &:hover
+                box-shadow: none
+            div
+                transform: skewX(25deg)
+        &__content
+            width: 768px
+            &_active
+                display: flex
+        &-item
+            width: 610px
+            &_block
+                display: block
+            &__wrapper
+                display: flex
+                width: calc(200% + 20px)
+            &__content
+                width: 50%
+                margin-right: 0
+                transform: translateX(-100%)
+                transition: 0.5s all
+                &_active
+                    transform: translateX(0%)
+                    margin-right: 4px
+            &_list
+                /* display: none */
+                position: relative
+                width: 50%
+                margin: 0 0 0 20px
+                padding: 0 20px 0 20px
+                margin-bottom: 0
+                transition: translateX(0%)
+                transition: 0.5s all
+                &_active
+                    transform: translateX(-100%)
+                    margin-left: 0
+            &__subwrapper
+                display: flex
+                justify-content: space-between
+                margin: 10px 10px 25px 4px
+            &__game
+                padding: 31px
+                border: 2px solid rgba(0, 0, 0, .7)
+                min-width: 85px
+                min-height: 145px
+                transition: 0.5s all
+                &:hover
+                    border: 2px solid rgba(0, 0, 0, .7)
+                    box-shadow: none
+                    min-width: 85px
+                    padding: 31px
+                &-hw
+                    margin-left: 0px
+                    background: url(../img/halo_wars-min.jpg) center (center / cover) no-repeat  // Halo: Wars    
+                &-hr
+                        background: url(../img/reach-min.jpg) center (center / cover) no-repeat  // Halo Reach
+                &-hce
+                    margin-right: 0px
+                    background: url(../img/combat_evolved-min.png) center (center / cover) no-repeat  // Halo: Combat Evolved
+                &-hftr
+                    margin-left: 0px
+                    background: url(../img/firetaem-min.jpg) center (center / cover) no-repeat  // Halo: Fireteam Raven
+                &-htwo
+                    background: url(../img/halo_2-min.jpeg) center (center / cover) no-repeat  // Halo 2
+                &-hodst
+                    margin-right: 0px
+                    background: url(../img/odst-min.jpg) center (center / cover) no-repeat  // Halo 3: ODST
+                &-three
+                    margin-left: 0px
+                    background: url(../img/halo_3-min.png) center (center / cover) no-repeat // Halo 3
+                &-hsa
+                    background: url(../img/assault-min.jpg) center (center / cover) no-repeat  // Halo: Spartan Assault
+                    &:hover
+                        margin: 0 2px 0 2px
+                &-hfour
+                    margin-right: 0px
+                    background: url(../img/halo_4-min.jpeg) center (center / cover) no-repeat  // Halo 4
+                &-hss
+                    margin-left: 0px
+                    background: url(../img/spartan_strike-min.jpg) center (center / cover) no-repeat  // Halo: Spartan Strike
+                &-guardians
+                    background: url(../img/halo_5-min.jpg) center (center / cover) no-repeat  // Halo 5: Guardians
+                &-hwtwo
+                    margin-right: 0px
+                    background: url(../img/wars_2-min.jpeg) center (center / cover) no-repeat  // Halo 5: Guardians
+            &__book
+                padding: 31px
+                border: 2px solid rgba(0, 0, 0, .7)
+                min-width: 85px
+                min-height: 125px
+                transition: 0.5s all
+                &:hover
+                    box-shadow: none
+                    border: 2px solid rgba(0, 0, 0, .7)
+                    min-width: 85px
+                    padding: 31px
+                &-htfor
+                    margin-left: 0px
+                    background: url(../img/fall_of_reach-min.png) center (center / cover) no-repeat // Halo: The fall of reach
+                &-htf
+                    background: url(../img/flood-min.jpg) center (center / cover) no-repeat // Halo: The flood
+                &-hfs
+                    margin-right: 4px
+                    background: url(../img/first_strike-min.png) center (center / cover) no-repeat // Halo: First Strike
+                &-hch
+                    margin-left: 0px
+                    background: url(../img/harvest_1-min.png) center (center / cover) no-repeat // Halo: contact Harvest
+                &-hgoo
+                    background: url(../img/onyx-min.jpg) center (center / cover) no-repeat // Halo: Ghost of Onyx
+                &-hglass
+                    margin-right: 4px
+                    background: url(../img/Halo_Glasslands-min.jpg) center (center / cover) no-repeat // Halo: Glasslands
+                &-hcr
+                    margin-left: 0px
+                    background: url(../img/criptum-min.jpg) center (center / cover) no-repeat // Halo: Cryptum
+                &-hprim
+                    background: url(../img/primordium-min.jpg) center (center / cover) no-repeat // Halo: Primordium
+                &-hsil
+                    margin-right: 4px
+                    background: url() center (center / cover) no-repeat // Halo: Silentium
+                &-httw
+                    margin-left: 0px
+                    background: url(../../img/thursdaywar-min.jpg) center (center / cover) no-repeat // Halo: Halo: The Thursday War
+                &-hmd
+                    background: url(../img/mortal_dicata-min.jpg) center (center / cover) no-repeat // Halo: Mortal Dicata
+                &-hbc
+                    margin-right: 4px
+                    background: url(../img/Halo-Broken-Circle-min.jpg) center (center / cover) no-repeat // Halo: Broken Circle
+            &__movie
+                padding: 25px
+                border: 2px solid rgba(0, 0, 0, .7)
+                min-width: 85px
+                min-height: 125px
+                transition: 0.5s all
+                &:hover
+                    box-shadow: none
+                    border: 2px solid rgba(0, 0, 0, .7)
+                    min-width: 85px
+                    padding: 25px
+                &-hfud
+                    margin-left: 4px
+                    background: url(../img/unto_down-min.jpg) center (center / cover) no-repeat // Halo: Forward Unto Down
+                &-htw
+                    background: url(../img/halo_tw-min.jpg) center (center / cover) no-repeat // Halo: Twillight
+                &-hser
+                    margin-right: 10px
+                    background: url(../img/serial-min.jpg) center (center / cover) no-repeat // Halo serial
+                &-hleg
+                    margin-left: 4px
+                    background: url(../img/legend-min.jpg) center (center / cover) no-repeat // Halo: Legend
+            &__border
+                padding: 25px
+                border: 2px solid #E8E8E8
+                width: 110px
+                height: 45px
+                background-color: rgba(0, 0, 0, .7)
+                &-wars
+                    padding: 36px
+                &-reach
+                    padding: 32px
+                &-combat
+                    padding: 23px
+                &-fireteam
+                    padding: 19px
+                &-two
+                    padding: 32px
+                &-odst
+                    padding: 28px
+                &-hthr
+                    padding: 32px
+                &-spartanas
+                    padding: 20px
+                &-four
+                    padding: 30px
+                &-spartanst
+                    padding: 20px
+                &-hguards
+                    padding: 21px
+                &-warstwo
+                    padding: 29px
+            &_link
+                display: block
+                margin: 0 auto
+                color: #E8E8E8
+                text-align: center
+                text-decoration: none
+            &_heading
+                font-size: 12px
+                font-weight: 400
+    .promo__footer
+        .container
+            width: 768px
+            margin: 0 auto
+
+@media (max-width: 767px)
+    .promo__footer
+        display: none
