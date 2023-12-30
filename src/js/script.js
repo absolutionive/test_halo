@@ -30,3 +30,22 @@ $(document).ready(function(){
       toggleSlide('.subheader-item__back');
 
 });
+
+window.addEventListener('DOMContentLoaded', ()=> {
+    const menu = document.querySelectorAll('.header__list'),
+    menuItem = document.querySelectorAll('.header__list_item'),
+    hamburger = document.querySelectorAll('.hamburger');
+
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('hamburger_active');
+        menu.classList.toggle('header__list-wrapper_active');
+    });
+
+    menuItem.forEach(item => {
+        item.addEventListener('click', () => {
+            hamburger.classList.toggle('hamburger_active');
+            menu.classList.toggle('header__list_active');
+        });
+    })
+
+  })

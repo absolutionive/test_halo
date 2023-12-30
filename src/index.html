@@ -14,7 +14,7 @@
         <header class="header">
             <div class="container container-header">
                 <nav class="header__navbar">
-                    <div>
+                    <div class="visible">
                         <div class="header__navbar-icon">
                             <a href="#">
                                 <img src="icons/elite-min.png" alt="" class="header_icon">
@@ -22,7 +22,7 @@
                         </div>
                     </div>
                     <div>
-                        <ul class="header__list">
+                        <div class="header__list">
                             <div class="header__list-wrapper">
                                 <div>
                                     <li class="header__list_item"><a href="http://127.0.0.1:5501/src/" target="_blank" class="header__list_link">Игры серии</a></li>
@@ -46,14 +46,22 @@
                                     <li class="header__list_item"><a href="#" target="_blank" class="header__list_link">F.A.Q.</a></li>
                                 </div>
                             </div>
-                        </ul>
+                        </div>
                     </div>
                     <div>
                         <div>
                             <button class="button glowing" type="button"><a href="#" class="header__list_link header__list_link-button">official site</a></button>
                         </div>
                     </div>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </nav>
+                <div>
+                    <button class="button button-midlePX glowing" type="button"><a href="#" class="header__list_link header__list_link-button">official site</a></button>
+                </div>
             </div>
         </header>
         <div class="subheader">
@@ -325,8 +333,8 @@
         <div class="promo__footer">
             <div class="container">
                 <div class="promo__wrapper">
-                    <div class="promo__hr">
-                        <hr>
+                    <div>
+                        <hr class="promo__hr">
                     </div>
                     <div class="promo__social">
                         <div class="promo__item">
@@ -356,12 +364,43 @@
                         </div>
                     </div>
                 </div>
+                <div class="promo__wrapvisible">
+                    <div class="promo__socvesible">
+                        <div class="promo__item">
+                            <a href="https://github.com/absolutionive" target="_blank" class="promo__linkvisible">
+                                <i class="fa-brands fa-github fa-xl" style="color: #ffffff;"></i>
+                            </a>
+                        </div>
+                        <div class="promo__item">
+                            <a href="https://t.me/Murdererwest" target="_blank" class="promo__linkvisible">
+                                <i class="fa-brands fa-telegram fa-xl" style="color: #4da1ef;"></i>
+                            </a>
+                        </div>
+                        <div class="promo__item">
+                            <a href="#" class="promo__linkvisible">
+                                <i class="fa-solid fa-coins fa-xl" style="color: #f0d105;"></i>
+                            </a>
+                        </div>
+                        <div class="promo__item">
+                            <a href="#" class="promo__linkvisible">
+                                <i class="fa-brands fa-discord fa-xl" style="color: #6b3dd6;"></i>
+                            </a>
+                        </div>
+                        <div class="promo__item">
+                            <a href="#" class="promo__linkvisible promo__linkvisible-youtube">
+                                <i class="fa-brands fa-youtube fa-xl" style="color: #e01a1a;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
+
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/35b877e265.js" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

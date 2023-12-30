@@ -1,0 +1,33 @@
+.header
+    min-height: 120px
+    background: rgba(0, 0, 0, .6)
+    &_icon
+        width: 100%
+    &__navbar
+        display: grid
+        grid-template-columns: 200px 1050px 221px
+        grid-template-rows: 110px  
+        &-icon
+            height: 90px 
+    &__list
+        /* margin-top: 25px */
+        list-style-type: none
+        &-wrapper
+            display: grid
+            grid-template-columns: 130px 137px 180px 180px 180px 90px 75px
+            grid-template-rows: 110px
+        &-wrapper > div
+            display: flex
+            justify-content: center
+            align-items: center
+            &:hover
+                background-color: rgba(166, 165, 168, .3)
+        &_link
+            font-size: 14px
+            font-weight: 400px
+            text-align: center
+            text-decoration: none
+            text-transform: uppercase
+            color: #fff
+
+    
