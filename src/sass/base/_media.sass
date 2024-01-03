@@ -1,5 +1,4 @@
-@media (min-width:1600px), (max-width: 1920px)
-@media (min-width:1281px), (max-width: 1600px)
+@media (min-width:1281px)
     .promo
         min-height: 1140px
         &__social
@@ -29,6 +28,10 @@
         margin: 0 auto
         width: 100px
         height: 40px
+    .header
+        &__navbar
+            &-mobile
+                display: none
         
 @media (max-width: 1280px)
     .promo
@@ -85,6 +88,9 @@
                     background-color: rgba(0, 0, 0, 0.02)
             &_link
                 font-size: 12px
+        &__mobile
+            &-list
+                display: none
         .hamburger
             display: none
         .button
@@ -580,8 +586,8 @@
 
 @media (max-width: 545px)
     .promo
-        background: url(../img/bg_mini1.jpg) center (center / cover) no-repeat
-        height: 450px
+        background: url(../img/bg_mobile1.jpg) center (center / cover) no-repeat
+        min-height: 450px
         &__footer
             display: none
         &__social
@@ -589,13 +595,31 @@
         &__socvesible
             display: none
     .header
-        min-height: 50px
+        min-height: 35px
         .container
             width: 320px
+        &__mobile
+            &-list
+                display: flex
+                justify-content: center
+                list-style-type: none
+                padding: 0
+            &-item
+                margin: 0 10px 0 10px
+            &-link
+                font-size: 8px
+                font-weight: 300
+                text-align: center
+                text-decoration: none
+                color: #E1DBDB
+        &__navbar
+            display: none
         &__list
             display: none
             
     .subheader
+        display: none
+    .visible
         display: none
 
 
